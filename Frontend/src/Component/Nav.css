@@ -1,0 +1,76 @@
+/* Nav.css */
+:root {
+  --color-1: #ff4d4d; /* red */
+  --color-2: #4d79ff; /* blue */
+  --color-3: #4dff88; /* green */
+  --color-4: #ffd24d; /* yellow */
+  --color-5: #ff4da6; /* pink */
+  --color-6: #ff944d; /* orange */
+  --color-7: #8c4dff; /* purple */
+  --color-8: #4dffff; /* cyan */
+}
+/* upper part for gooey animation */
+
+/* Nav.css */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 3vw;
+  background-color: #111; /* dark background */
+  color: white;
+  border-bottom-left-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+}
+
+.logo img {
+  height: 4vw;
+  width: 8vw;
+  background-color: #111;
+  cursor: pointer;
+  object-fit: cover;
+}
+.logo{
+  background-color: #111;
+  
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  background-color: #111;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  background-color: #111;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+.connect a {
+  text-decoration: none;
+  background-color: #007bff; /* blue button */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.connect a:hover {
+  background-color: #0056b3;
+}
+
+/* Active link styling */
+.active {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
