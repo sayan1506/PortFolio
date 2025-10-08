@@ -1,8 +1,33 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import logo from "../assets/logo.png"; // make sure extension is correct
+import logo from "../assets/logo.png"; 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Nav = () => {
+  useGSAP(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".nav", {
+    scrollTrigger: {
+      trigger: ".main-content",
+      start: "top",
+      end: "top+=300", // optional, defines scroll range for animation
+      scrub: 1,        // smooth scroll-linked motion
+    },
+    marginTop: "2vw",
+    marginLeft: "2vw",
+    marginRight: "2vw",
+    width: "calc(100% - 4vw)",
+    borderRadius: "5vw",
+    duration: 0.3,
+    ease: "power2.out",
+  });
+});
+
+
   return (
     <div className="nav">
       <div className="logo">

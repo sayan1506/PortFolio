@@ -1,3 +1,7 @@
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
+// import { useGSAP } from "@gsap/react";
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Component/Nav';
 import Project from './Pages/Project';
@@ -7,12 +11,15 @@ import Contacts from './Pages/Contacts';
 import Connect from './Pages/Connect';
 import "./App.css"
 const App = () => {
+  
+
   return (
     <div>
       <div className="App">
         <Navbar />
 
         <main className="main-content">
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Project />} />
@@ -23,6 +30,8 @@ const App = () => {
             
           </Routes>
         </main>
+
+        
       </div>
     </div>
   )

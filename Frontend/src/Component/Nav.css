@@ -14,6 +14,13 @@
 /* Nav.css */
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* ensures it's above other elements */
+  background: white; /* or your preferred background color */
+  /* transition: all 0.5s ease; */
   display: flex;
   justify-content: space-between;
   align-items: center;
